@@ -3,6 +3,8 @@ Swedish Dvorak for Linux
 
 ![sv_dvorak keyboard layout](sv_dvorak-linux.png)
 
+Based on work by Thomas Lundqvist et al. http://tlundqvist.org/sv_dvorak/
+
 How to use it:
 ---------------
 
