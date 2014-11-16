@@ -1,0 +1,63 @@
+// Swedish Dvorak variant, sv_dvorak (Thomas Lundqvist), 2009-11-21
+// http://lundqvist.dyndns.org/sv_dvorak/
+//
+// For use with xorg (tested on X Window System Version 7.0.0)
+//
+// Typically drop this file as /usr/share/X11/xkb/symbols/se_sv_dvorak
+// Then use it as `setxkbmap se_sv_dvorak`
+//
+// 2009-11-21, added mu (the greek letter)
+// 2009-03-11, modified to work with recent X ("keypad" changed to "kpdl")
+//             (contrib by Elias Näslund)
+// 2006-10-13, first version
+
+partial default alphanumeric_keys 
+xkb_symbols "basic" {
+    include "us(dvorak)"
+    include "se_sv_dvorak(dvorak_intl)"
+    include "se_sv_dvorak(sv_dvorak)"
+};
+
+// Picked from xfree86.org: xc/programs/xkbcomp/symbols/pc/dvorak_intl (rev=1.1)
+
+partial alphanumeric_keys
+xkb_symbols "dvorak_intl" {
+  key <TLDE> { [ dead_grave, dead_tilde,    grave,	      asciitilde    ] };
+  key <AE05> { [          5, percent,	    EuroSign			    ] };
+  key <AE06> { [	  6, dead_circumflex, asciicircum,    asciicircum   ] };
+  key <AE09> { [	  9, parenleft,	    dead_breve,	      dead_breve    ] };
+  key <AE10> { [	  0, parenright,    dead_abovering,   dead_abovering] };
+
+  key <AD01> { [ dead_acute, dead_diaeresis, apostrophe,    quotedbl	    ] };
+  key <AD02> { [      comma, less,	     dead_cedilla,  dead_caron	    ] };
+  key <AD03> { [     period, greater,	     dead_abovedot, dead_circumflex ] };
+  key <AD11> { [      slash, question,	     dead_hook,	    dead_hook	    ] };
+  key <AD12> { [      equal, plus,	    dead_doubleacute, dead_horn	    ] };
+
+  key <AC03> { [          e, E,		     EuroSign,         cent	    ] };
+  key <AC10> { [          s, S,		     ssharp   			    ] };
+  key <AC11> { [      minus, underscore,    dead_macron,      dead_belowdot ] };
+
+  key <AB01> { [  semicolon, colon,	     dead_ogonek,   dead_diaeresis  ] };
+
+};
+
+// Modifications for sv_dvorak (mainly adds åäö to us-dvorak)
+
+partial alphanumeric_keys
+xkb_symbols "sv_dvorak" {
+  key <TLDE> { [ apostrophe,  asciitilde,           grave,      dead_tilde ] };
+  key <AE02> { [          2,    quotedbl,              at                  ] };
+  key <AE06> { [	  6, asciicircum, dead_circumflex                  ] };
+  key <AD01> { [      aring,       Aring,      dead_acute                  ] };
+  key <AC11> { [      minus,  underscore,             bar,     dead_macron ] };
+  key <AB01> { [ adiaeresis,  Adiaeresis,      dead_grave,     dead_ogonek ] };
+  key <LSGT> { [ odiaeresis,  Odiaeresis,  dead_diaeresis,   dead_belowdot ] };
+  key <BKSL> { [  semicolon,       colon,       backslash                  ] };
+
+  key <AB07> { [         m,          M,           mu,    masculine ]  };
+
+  include "kpdl(comma)"
+  include "level3(ralt_switch)"
+};
+
