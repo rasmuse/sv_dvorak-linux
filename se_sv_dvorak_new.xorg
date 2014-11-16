@@ -1,15 +1,7 @@
-// Swedish Dvorak variant, sv_dvorak (Thomas Lundqvist), 2009-11-21
-// http://lundqvist.dyndns.org/sv_dvorak/
-//
-// For use with xorg (tested on X Window System Version 7.0.0)
-//
-// Typically drop this file as /usr/share/X11/xkb/symbols/se_sv_dvorak
-// Then use it as `setxkbmap se_sv_dvorak`
-//
-// 2009-11-21, added mu (the greek letter)
-// 2009-03-11, modified to work with recent X ("keypad" changed to "kpdl")
-//             (contrib by Elias Näslund)
-// 2006-10-13, first version
+// Here is how this file works:
+// Start from US Dvorak,
+// then add some international Dvorak settings from xfree86.org,
+// then add additional settings for sv_dvorak.
 
 partial default alphanumeric_keys 
 xkb_symbols "basic" {
@@ -42,7 +34,8 @@ xkb_symbols "dvorak_intl" {
 
 };
 
-// Modifications for sv_dvorak (mainly adds åäö to us-dvorak)
+
+// Modifications for sv_dvorak
 
 partial alphanumeric_keys
 xkb_symbols "sv_dvorak" {
@@ -56,6 +49,14 @@ xkb_symbols "sv_dvorak" {
   key <BKSL> { [  semicolon,       colon,       backslash                  ] };
 
   key <AB07> { [         m,          M,           mu,    masculine ]  };
+
+  key <AE01> { [	  1,	  exclam,	    U02DA		   ] };
+  key <AE03> { [          3,      numbersign,         sterling,             yen	]	};
+  key <AE04> { [	  4,	  dollar,         section		   ] };
+  key <AE07> { [	  7,	  ampersand,      onehalf] };
+  key <AE08> { [	  8,	  asterisk,    onequarter] };
+  key <AD08> { [	  c,	 	C,	dead_cedilla] };
+  key <AC09> { [	  n,	 	N,	dead_tilde] };
 
   include "kpdl(comma)"
   include "level3(ralt_switch)"
