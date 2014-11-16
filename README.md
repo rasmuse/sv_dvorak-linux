@@ -1,6 +1,8 @@
 Swedish Dvorak for Linux
 =========================
 
+![sv_dvorak keyboard layout](sv_dvorak-linux.png)
+
 How to use it:
 ---------------
 
