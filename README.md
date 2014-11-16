@@ -31,3 +31,8 @@ If you want the layout added in the menus, insert the following in `/usr/share/X
     </variantList>
 </layout>
 ```
+
+Want to contribute?
+----------------------
+
+You are most welcome. Just send a pull request!
