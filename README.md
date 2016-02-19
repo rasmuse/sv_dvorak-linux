@@ -1,9 +1,12 @@
 Let's try to move backslash and pipe to the ,.<> buttons!
 ===========================================================
 
-Just patch as follows
+Patch and reload layout:
+
 ```
-patch /usr/share/X11/xkb/symbols/se sv_patch
+sudo patch /usr/share/X11/xkb/symbols/se sv_patch
+sudo rm /var/lib/xkb/*.xkm
+setxkbmap se sv_dvorak
 ```
 
 
