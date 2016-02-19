@@ -1,3 +1,12 @@
+Let's try to move backslash and pipe to the ,.<> buttons!
+===========================================================
+
+Just patch as follows
+```
+patch /usr/share/X11/xkb/symbols/se sv_patch
+```
+
+
 Swedish Dvorak for Linux
 =========================
 

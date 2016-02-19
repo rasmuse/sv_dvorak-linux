@@ -1,0 +1,6 @@
+378,379c378,379
+<     key <AD02> { [ comma, less, dead_cedilla, dead_caron ] };
+<     key <AD03> { [ period, greater, dead_abovedot, dead_circumflex ] };
+---
+>     key <AD02> { [ comma, less, bar, dead_caron ] };
+>     key <AD03> { [ period, greater, backslash, dead_circumflex ] };
