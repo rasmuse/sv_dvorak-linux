@@ -1,15 +1,3 @@
-Let's try to move backslash and pipe to the ,.<> buttons!
-===========================================================
-
-Patch and reload layout:
-
-```
-sudo patch /usr/share/X11/xkb/symbols/se sv_patch
-sudo rm /var/lib/xkb/*.xkm
-setxkbmap se sv_dvorak
-```
-
-
 Swedish Dvorak for Linux
 =========================
 
