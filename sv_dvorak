@@ -15,7 +15,7 @@ xkb_symbols "sv_dvorak" {
     key <AD01> { [ dead_acute, dead_diaeresis, apostrophe, quotedbl ] };
     key <AD02> { [ comma, less, bar, dead_caron ] };
     key <AD03> { [ period, greater, backslash, dead_circumflex ] };
-    key <AD11> { [ slash, question, dead_hook, dead_hook ] };
+    key <AD11> { [ slash, question, questiondown, dead_hook ] };
     key <AD12> { [ equal, plus, dead_doubleacute, dead_horn ] };
     key <AC03> { [ e, E, EuroSign, cent ] };
     key <AC10> { [ s, S, ssharp ] };
@@ -32,7 +32,7 @@ xkb_symbols "sv_dvorak" {
     key <LSGT> { [ odiaeresis, Odiaeresis, dead_diaeresis, dead_belowdot ] };
     key <BKSL> { [ semicolon, colon, backslash ] };
     key <AB07> { [ m, M, mu, masculine ] };
-    key <AE01> { [ 1, exclam, U02DA ] };
+    key <AE01> { [ 1, exclam, U02DA, exclamdown ] };
     key <AE03> { [ 3, numbersign, sterling, yen ] };
     key <AE04> { [ 4, dollar, section ] };
     key <AE07> { [ 7, ampersand, onehalf] };
